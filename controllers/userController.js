@@ -23,6 +23,7 @@ const loginuser = async (req, res) => {
   }
 };
 
+//To create JWT Token
 const createToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET);
 };
